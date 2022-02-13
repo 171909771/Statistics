@@ -1,5 +1,6 @@
 # use glm()
 # if Y value is associated with survival time, use COX regression  https://cloud.tencent.com/developer/article/1556958
+# cox regression followed by proportional hazards test  http://www.sthda.com/english/wiki/cox-model-assumptions
 
 ## arguments
 binomial(link = "logit")    #定性资料 0 or 1
