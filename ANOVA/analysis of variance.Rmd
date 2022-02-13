@@ -1,0 +1,55 @@
+---
+title: "analysis of variance (方差分析)"
+author: "longlong"
+date: "2022/2/13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(multcomp)
+```
+
+# analysis of variance  with single factor
+```{r}
+data("cholesterol")
+## normalization distribution test
+shapiro.test(cholesterol$response)
+## 方差齐性检验
+bartlett.test(response~trt,cholesterol)
+## 方差检验 2methods
+a=aov(response~trt,cholesterol)
+a1=oneway.test(response~trt,cholesterol)
+## two groups comparation, Note: only used after aov function
+TukeyHSD(a)
+```
+
+# two-ways ANOVA 
+```{r}
+## 协方差分析，就是把感染因素去除后再分析
+data("litter")
+### 注意看写斜率是否一样，斜变量放在前面，P值大于0.05为相同的斜率
+a=aov(weight~gesttime*dose,litter)
+summary(a)
+library(effects)
+effect("dose",a)
+## repeated 
+### clearly explained: https://zhuanlan.zhihu.com/p/161477855
+data(CO2)
+a=subset(CO2, Treatment =="chilled")
+fi2=aov(uptake~conc*Type + Error(Plant/conc), a)
+summary(fi2)
+```
+
+# 多元方差分析，就是一个自变量多个因变量
+```{r}
+library(MASS)
+data("UScereal")
+y=cbind(UScereal$calories,UScereal$fat,UScereal$sugars)
+fit=manova(y~UScereal$shelf)
+summary(fit)
+## if analize each group, the question to the one-way ANOVA
+```
