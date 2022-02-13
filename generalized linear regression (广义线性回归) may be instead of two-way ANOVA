@@ -1,0 +1,18 @@
+# use glm()
+# if Y value is associated with survival time, use COX regression
+## arguments
+binomial(link = "logit")    #定性资料 0 or 1
+gaussian(link = "identity")   #计量资料
+Gamma(link = "inverse")
+inverse.gaussian(link = "1/mu^2")
+poisson(link = "log")    #计数资料
+quasi(link = "identity", variance = "constant")
+quasibinomial(link = "logit")
+quasipoisson(link = "log")
+
+# example
+## notes: 哑变量 need string
+
+a1=glm(age~ph.ecog, data=a, family = gaussian())
+summary(a1)  #resembling two-ways ANOVA
+confint(a1)  #confidence interval
