@@ -1,5 +1,6 @@
 # use glm()
-# if Y value is associated with survival time, use COX regression
+# if Y value is associated with survival time, use COX regression  https://cloud.tencent.com/developer/article/1556958
+
 ## arguments
 binomial(link = "logit")    #定性资料 0 or 1
 gaussian(link = "identity")   #计量资料
