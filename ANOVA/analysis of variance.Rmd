@@ -16,9 +16,9 @@ library(multcomp)
 # analysis of variance  with single factor
 ```{r}
 data("cholesterol")
-## normalization distribution test
+## normalization distribution test, pvalue >0.05 means ok
 shapiro.test(cholesterol$response)
-## 方差齐性检验
+## 方差齐性检验, pvalue >0.05 means OK
 bartlett.test(response~trt,cholesterol)
 ## 方差检验 2methods
 a=aov(response~trt,cholesterol)
@@ -26,6 +26,11 @@ a1=oneway.test(response~trt,cholesterol)
 ## two groups comparation, Note: only used after aov function
 TukeyHSD(a)
 ```
+# if non-normalization distribution, use kruskal-Wallis test
+```{r}
+kruskal.test()
+```
+
 
 # two-ways ANOVA 
 ```{r}
