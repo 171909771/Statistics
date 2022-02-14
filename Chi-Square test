@@ -1,0 +1,5 @@
+m2=data.frame(rbind(c(762, 327), c(484, 239)))
+dimnames(m2) <- list(gender = c("F", "M"),party = c("Democrat","Independent"))                 
+Xsq <- chisq.test(m2)
+Xsq$observed
+
