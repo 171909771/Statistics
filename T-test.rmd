@@ -1,0 +1,10 @@
+# T-test need to verify if the data is normalization distribution
+```{r}
+library()
+data(lung)
+shapiro.test(lung$meal.cal)  ## the result is not the normalization
+## of note, it is not compare the means, but is the distribution
+wilcox.test(meal.cal~sex,lung)
+## if the result is normalization
+t.test()
+```
