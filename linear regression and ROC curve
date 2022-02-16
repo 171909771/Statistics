@@ -1,0 +1,43 @@
+load("diagnosis.RData")
+a= data.wide
+
+#  linear regression
+## https://zhuanlan.zhihu.com/p/38306630
+## https://www.bilibili.com/video/BV1QQ4y1K7Sd/?spm_id_from=333.788.recommend_more_video.-1
+a$TestB.date=as.factor(a$TestB.date)
+a1=lm(TestA~Age+TestC+TestB+relevel(TestB.date, "2007-09-18"), a) # if the number of variable post ~ is 1, it is single factor linear regression.
+summary(a1)  #R-squared means the factors acount %n for effecting the variant.
+
+# linear regression verfication. 
+library(car) #linear regression package
+durbinWatsonTest(a1)  #p>0.05 means independent factor for each other, it is very important.
+vif(a1)  # generally <5 means independent factor, in medicine, could be <10
+qqPlot(a1) # verify if residual is normalization
+
+
+
+# logistic regression
+## total number of sample is 5 times than the num of variable 
+## number of positive dependent variable  >15%
+## https://www.bilibili.com/video/BV1QT4y1G7kL?spm_id_from=333.999.0.0
+
+model1=glm(Status~Sex+Age+TestA+TestB+TestC, a,family = binomial())
+summary(model1)
+# using step both method to modify the num of data
+model2=step(model1, direction ="both")
+summary(model2)
+anova(object = model2,test = "Chisq")
+## search how to draw forest pic 
+
+
+library(pROC)
+data(aSAH)
+roc1 <- roc(aSAH$outcome, aSAH$s100b,levels=c("Good", "Poor")) 
+roc2 <- roc(aSAH$outcome, aSAH$ndka, levels=c("Good", "Poor"))
+
+plot(roc1)
+
+modelroc <- roc(newdata$y,pre)
+plot(modelroc, print.auc=TRUE, auc.polygon=TRUE, grid=c(0.1, 0.2),
+     grid.col=c("green", "red"), max.auc.polygon=TRUE,
+     auc.polygon.col="skyblue", print.thres=TRUE)
