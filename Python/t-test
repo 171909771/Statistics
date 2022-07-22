@@ -1,0 +1,6 @@
+import pandas as pd
+import numpy as np
+from scipy.stats import ttest_ind
+dat1=pd.DataFrame([np.random.random(100) for i in range(100)])
+dat2=pd.DataFrame([np.random.random(100) for i in range(100)])
+res=ttest_ind(dat1[0],dat1[0])
