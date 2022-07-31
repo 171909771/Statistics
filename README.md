@@ -7,3 +7,6 @@
 3. 都需要满足方差齐性要求（方差不齐没有可比性）；
 4. 都是针对单因子进行分析。
 
+### Spearman Pearson相关性
+- https://byteofbio.com/archives/16.html
+![image](https://user-images.githubusercontent.com/41554601/182005822-69daa581-d3dd-4563-a48d-6dbc90998a10.png)
