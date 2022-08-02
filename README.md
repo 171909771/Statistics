@@ -10,3 +10,6 @@
 ### Spearman Pearson相关性
 - https://byteofbio.com/archives/16.html
 ![image](https://user-images.githubusercontent.com/41554601/182005822-69daa581-d3dd-4563-a48d-6dbc90998a10.png)
+
+### R中的 (Dispersion parameter for poisson family taken to be 1) 不是离散度
+https://stats.stackexchange.com/questions/33432/dispersion-parameter-in-glm-output
