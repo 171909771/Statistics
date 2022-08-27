@@ -15,3 +15,10 @@
 
 ### R中的 (Dispersion parameter for poisson family taken to be 1) 不是离散度
 https://stats.stackexchange.com/questions/33432/dispersion-parameter-in-glm-output
+
+置换检验Permutation test（非参数检验，数据数量少）
+----
+- https://cloud.tencent.com/developer/article/1755197
+
+##### R包
+- https://rdrr.io/cran/exactRankTests/man/perm.test.html
