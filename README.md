@@ -1,5 +1,9 @@
 ![image](https://user-images.githubusercontent.com/41554601/182004478-b8888d79-d868-4399-9859-dcb64e36f2d3.png)
 ![image](https://user-images.githubusercontent.com/41554601/182004512-d1f7e7b0-d8db-4fd0-838d-e422d4d17fe0.png)
+
+### 非参数组间差异比较
+![image](https://user-images.githubusercontent.com/41554601/196486659-33f71feb-41f3-48d0-9f20-2d97d5c13207.png)
+
 ##### 随机区组设计解释   - https://www.sohu.com/a/157954090_301099
 ![image](https://user-images.githubusercontent.com/41554601/187032121-70064d44-3b16-4ecb-aa55-d13ae63372e2.png)
 
