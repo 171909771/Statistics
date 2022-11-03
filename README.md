@@ -27,8 +27,10 @@ https://stats.stackexchange.com/questions/33432/dispersion-parameter-in-glm-outp
 ##### R包
 - https://rdrr.io/cran/exactRankTests/man/perm.test.html
 
-##### 线性回归中的link-function
+线性回归中的link-function
+-----
 - https://blog.csdn.net/qq_20241587/article/details/106863499
 
-##### P值校正
+P值校正
+-----
 - https://www.jianshu.com/p/949626b18e69
