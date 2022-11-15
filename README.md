@@ -39,4 +39,3 @@ P值校正
 -----
 - https://www.cnblogs.com/leezx/p/8635355.html  # 初级
 - https://zhuanlan.zhihu.com/p/45421484 # 高级，没有看懂
-- https://zhuanlan.zhihu.com/p/45421484   # 
