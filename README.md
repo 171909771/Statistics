@@ -7,6 +7,10 @@
 ##### 随机区组设计解释   - https://www.sohu.com/a/157954090_301099
 ![image](https://user-images.githubusercontent.com/41554601/187032121-70064d44-3b16-4ecb-aa55-d13ae63372e2.png)
 
+### t检验及秩和检验
+##### 包括方差齐性检验及正态性检验
+- https://www.jianshu.com/p/ba629f6ae85d
+
 ### 单因素方差分析（One-way Anova）与T检验的用途很类似：
 1. 都需要样本数据符合正态分布；
 2. 都是检验样本均值是否有显著差异；
