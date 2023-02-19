@@ -24,6 +24,9 @@
 - https://byteofbio.com/archives/16.html
 ![image](https://user-images.githubusercontent.com/41554601/182005822-69daa581-d3dd-4563-a48d-6dbc90998a10.png)
 
+### 三大统计学相关系数（pearson、kendall、spearman）
+https://blog.csdn.net/weixin_43876625/article/details/123921224
+
 ### R中的 (Dispersion parameter for poisson family taken to be 1) 不是离散度
 https://stats.stackexchange.com/questions/33432/dispersion-parameter-in-glm-output
 
