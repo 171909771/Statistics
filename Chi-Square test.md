@@ -41,3 +41,4 @@ Rather set 'simulate.p.value=TRUE'
 加入参数
 fisher.test(a, simulate.p.value = TRUE)
 ```
+- https://stackoverflow.com/questions/70724987/fisher-exact-test-in-r-without-using-simulate-p-value-true
